@@ -1,58 +1,64 @@
 <!DOCTYPE html>
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HorreursEnVente</title>
-
-    <!-- Bootstrap CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Votre fichier CSS personnalisé -->
+    <title>Horreur en vente</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Icônes Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <!-- Animation CSS (pour les animations du panier) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <!-- Swiper CSS (pour le carrousel d'images) -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    
-    
 </head>
+
 <body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="header">
+                <img src="Images/logo.png" alt="Logo Horreur en Vente" id="logo">
+                <h1>Horreur en Vente</h1>
+                <p>La boutique de référence pour les passionnés d'horreur</p>
+            </div>            
+            <ul class="menu">
+                <li><a href="catalogue.html">Catalogue</a></li>
+                <li><a href="a-propos.html">À propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">HorreursEnVente</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-            <!-- Les liens de votre barre de navigation -->
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Accueil</a>
-            </li>
-            <!-- ... autres liens ... -->
-            <li class="nav-item">
-                <a class="nav-link" href="cart.html">Panier (<span id="cartCount">0</span>)</a>
-            </li>
-        </ul>
-    </div>
-</nav>
+    <!-- Main Content -->
+    <main>
+        <section class="intro">
+            <h2>Bienvenue sur "Horreur en vente"</h2>
+            <p>Découvrez une sélection unique de produits dérivés du monde horrifique. Explorez, choisissez et plongez dans l'univers de vos films d'horreur préférés.</p>
+        </section>
 
-<div class="container mt-5">
-    <h1 class="text-center mb-5">Produits</h1>
-    <div id="products" class="row">
-        <!-- Les produits seront injectés ici par le script JavaScript -->
-        <!-- Chaque produit aura son propre carrousel d'images grâce au Swiper -->
-    </div>
-</div>
+        <section class="featured-products">
+            <h2>Produits phares</h2>
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product">
+                    <img src="Images/image99.jpg" alt="Produit 1">
+                    <h3>Titre Produit 1</h3>
+                    <p>Description courte du produit 1.</p>
+                    <button>Ajouter au panier</button>
+                </div>
+                <!-- Product 2 -->
+                <div class="product">
+                    <img src="Images/image98.jpg" alt="Produit 1">
+                    <h3>Titre Produit 2</h3>
+                    <p>Description courte du produit 2.</p>
+                    <button>Ajouter au panier</button>
+                </div>
+                <!-- Add more products as needed -->
+            </div>
+        </section>
+    </main>
 
-
-<!-- Swiper JS -->
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<!-- Votre fichier JavaScript personnalisé -->
-<script src="script.js"></script>
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.2/js/bootstrap.bundle.min.js"></script>
-
+    <!-- Footer -->
+    <footer>
+        <p>© 2023 Horreur en vente. Tous droits réservés.</p>
+    </footer>
 </body>
+
 </html>

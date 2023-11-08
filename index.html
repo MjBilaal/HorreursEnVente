@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,56 +7,102 @@
     <title>Horreur en vente</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
     <!-- Header -->
     <header>
-        <nav>
-            <div class="header">
-                <img src="Images/logo.png" alt="Logo Horreur en Vente" id="logo">
-                <h1>Horreur en Vente</h1>
-                <p>La boutique de référence pour les passionnés d'horreur</p>
-            </div>            
-            <ul class="menu">
-                <li><a href="catalogue.html">Catalogue</a></li>
-                <li><a href="a-propos.html">À propos</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="header">
+            <img src="Images/logo.png" alt="Logo Horreur en Vente" id="logo">
+            <nav class="navbar">
+                <ul class="menu">
+                    <li><a href="tous-les-produits.html">Tous les produits</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Masques</a>
+                        <div class="dropdown-content">
+                            <a href="#">Halloween</a>
+                            <a href="#">Personnages de film</a>
+                            <a href="#">Masques animaux</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Costumes</a>
+                        <div class="dropdown-content">
+                            <a href="#">Filles</a>
+                            <a href="#">Garçons</a>
+                            <a href="#">Adultes</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Licences phares</a>
+                        <div class="dropdown-content">
+                            <a href="#">Films d'horreur</a>
+                            <a href="#">Séries TV</a>
+                            <a href="#">Jeux vidéo</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="menu account-menu">
+                    <li><a href="panier.html">Panier</a></li>
+                    <li><a href="compte-client.html">Mon compte client</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-
     <!-- Main Content -->
     <main>
-        <section class="intro">
-            <h2>Bienvenue sur "Horreur en vente"</h2>
-            <p>Découvrez une sélection unique de produits dérivés du monde horrifique. Explorez, choisissez et plongez dans l'univers de vos films d'horreur préférés.</p>
-        </section>
+        <div class="main-content">
+            <section class="featured">
+                <h2>Produit à la une</h2>
+                <p>Stock limité!</p>
+            </section>
+            <section class="discover">
+                <button onclick="window.location.href='tous-les-produits.html';">Découvrez nos produits</button>
+            </section>
+        </div>
+      <!-- Product Reviews Section -->
+<div class="product-reviews">
+    <!-- Product 1 Review -->
+    <div class="product-review">
+        <img src="Images/image99.jpg" alt="Produit 1">
+        <p>4 masques horreurs</p>
+        <div class="review-card">
+            <div class="reviewer-name">John Doe</div>
+            <div class="review-rating">★★★★★</div>
+            <div class="review-text">Incroyablement terrifiant et de grande qualité !</div>
+        </div>
+    </div>
+    <!-- Product 2 Review -->
+    <div class="product-review">
+        <img src="Images/image98.jpg" alt="Produit 2">
+        <p>Costume de clown effrayant</p>
+        <div class="review-card">
+            <div class="reviewer-name">Jane Smith</div>
+            <div class="review-rating">★★★★☆</div>
+            <div class="review-text">Très bon produit, taille parfaite!</div>
+        </div>
+    </div>
+    <!-- Product 3 Review -->
+    <div class="product-review">
+        <img src="Images/image97.jpg" alt="Produit 3">
+        <p>Coffret DVD Shining / ÇA</p>
+        <div class="review-card">
+            <div class="reviewer-name">Alice Martin</div>
+            <div class="review-rating">★★★☆☆</div>
+            <div class="review-text">Bien reçu le colis, des chef d'oeuvres ces 2 films.</div>
+        </div>
+    </div>
+</div>
 
-        <section class="featured-products">
-            <h2>Produits phares</h2>
-            <div class="product-grid">
-                <!-- Product 1 -->
-                <div class="product">
-                    <img src="Images/image99.jpg" alt="Produit 1">
-                    <h3>Titre Produit 1</h3>
-                    <p>Description courte du produit 1.</p>
-                    <button>Ajouter au panier</button>
-                </div>
-                <!-- Product 2 -->
-                <div class="product">
-                    <img src="Images/image98.jpg" alt="Produit 1">
-                    <h3>Titre Produit 2</h3>
-                    <p>Description courte du produit 2.</p>
-                    <button>Ajouter au panier</button>
-                </div>
-                <!-- Add more products as needed -->
-            </div>
-        </section>
     </main>
 
     <!-- Footer -->
     <footer>
-        <p>© 2023 Horreur en vente. Tous droits réservés.</p>
+        <ul class="footer-menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="qui-sommes-nous.html">Qui sommes-nous?</a></li>
+            <li><a href="pourquoi-ce-site.html">Pourquoi ce site?</a></li>
+            <li><a href="paiement-et-livraison.html">Paiement, livraison et droits de rétractation</a></li>
+            <li><a href="faq.html">Questions fréquentes</a></li>
+        </ul>
     </footer>
 </body>
 

@@ -41,7 +41,7 @@
                     </li>
                 </ul>
                 <ul class="menu account-menu">
-                    <li><a href="panier.html">Panier</a></li>
+                    <li><a href="panier.html">Panier <span id="cart-count">0</span></a></li>
                     <li><a href="compte-client.html">Mon compte client</a></li>
                 </ul>
             </nav>
@@ -61,30 +61,43 @@
             </div>
 
             <script>
-                 function addToCart(button, productName) {
-        // Ajouter la classe pour déclencher l'animation
-        button.classList.add('added-to-cart');
-        button.textContent = "Ajouté au panier";
-
-        // Retirer la classe après 2 secondes
-        setTimeout(() => {
-            button.classList.remove('added-to-cart');
-            button.textContent = "Ajouter au panier";
-        }, 2000);
-    }
-
-    // Initialiser les boutons
-    document.addEventListener('DOMContentLoaded', (event) => {
-        let addToCartButtons = document.querySelectorAll('.product button');
-
-        addToCartButtons.forEach(button => {
-            button.addEventListener('click', function() {
-                let productName = this.previousElementSibling.previousElementSibling.textContent;
-                addToCart(this, productName);
-            });
-        });
-    });
+                let cartCount = 0;
+            
+                // Mettre à jour le nombre d'articles dans le panier
+                function updateCartCount() {
+                    document.getElementById('cart-count').textContent = cartCount;
+                }
+            
+                // Ajouter au panier et animer le bouton
+                function addToCart(button, productName) {
+                    // Ajout de la classe pour déclencher l'animation
+                    button.classList.add('added-to-cart');
+                    button.textContent = "Ajouté au panier";
+            
+                    // Incrémenter le compteur du panier
+                    cartCount++;
+                    updateCartCount();
+            
+                    // Retirer la classe après 2 secondes
+                    setTimeout(() => {
+                        button.classList.remove('added-to-cart');
+                        button.textContent = "Ajouter au panier";
+                    }, 2000);
+                }
+            
+                // Initialisation des boutons d'ajout au panier
+                document.addEventListener('DOMContentLoaded', (event) => {
+                    let addToCartButtons = document.querySelectorAll('.product button');
+            
+                    addToCartButtons.forEach(button => {
+                        button.addEventListener('click', function() {
+                            let productName = this.previousElementSibling.previousElementSibling.textContent;
+                            addToCart(this, productName);
+                        });
+                    });
+                });
             </script>
+            
             
             
 

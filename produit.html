@@ -60,133 +60,33 @@
                 <button type="button">Ajouter au panier</button>
             </div>
 
-            <div class="product">
-                <img src="Images/produit1.jpg" alt="Nom du produit 1">
-                <h3>Nom du produit 1</h3>
-                <p class="price">29.99€</p>
-                <p>Description brève du produit 1.</p>
-                <button type="button">Ajouter au panier</button>
-            </div>
+            <script>
+                 function addToCart(button, productName) {
+        // Ajouter la classe pour déclencher l'animation
+        button.classList.add('added-to-cart');
+        button.textContent = "Ajouté au panier";
 
-            <div class="product">
-                <img src="Images/produit1.jpg" alt="Nom du produit 1">
-                <h3>Nom du produit 1</h3>
-                <p class="price">29.99€</p>
-                <p>Description brève du produit 1.</p>
-                <button type="button">Ajouter au panier</button>
-            </div>
+        // Retirer la classe après 2 secondes
+        setTimeout(() => {
+            button.classList.remove('added-to-cart');
+            button.textContent = "Ajouter au panier";
+        }, 2000);
+    }
 
-            <div class="product">
-                <img src="Images/produit1.jpg" alt="Nom du produit 1">
-                <h3>Nom du produit 1</h3>
-                <p class="price">29.99€</p>
-                <p>Description brève du produit 1.</p>
-                <button type="button">Ajouter au panier</button>
-            </div>
+    // Initialiser les boutons
+    document.addEventListener('DOMContentLoaded', (event) => {
+        let addToCartButtons = document.querySelectorAll('.product button');
 
-            <div class="product">
-                <img src="Images/produit1.jpg" alt="Nom du produit 1">
-                <h3>Nom du produit 1</h3>
-                <p class="price">29.99€</p>
-                <p>Description brève du produit 1.</p>
-                <button type="button">Ajouter au panier</button>
-            </div>
-
-            <div class="product">
-                <img src="Images/produit1.jpg" alt="Nom du produit 1">
-                <h3>Nom du produit 1</h3>
-                <p class="price">29.99€</p>
-                <p>Description brève du produit 1.</p>
-                <button type="button">Ajouter au panier</button>
-            </div>
-
-            <div class="product">
-                <img src="Images/produit1.jpg" alt="Nom du produit 1">
-                <h3>Nom du produit 1</h3>
-                <p class="price">29.99€</p>
-                <p>Description brève du produit 1.</p>
-                <button type="button">Ajouter au panier</button>
-            </div>
-            <div class="product">
-                <img src="Images/produit1.jpg" alt="Nom du produit 1">
-                <h3>Nom du produit 1</h3>
-                <p class="price">29.99€</p>
-                <p>Description brève du produit 1.</p>
-                <button type="button">Ajouter au panier</button>
-            </div><div class="product">
-                <img src="Images/produit1.jpg" alt="Nom du produit 1">
-                <h3>Nom du produit 1</h3>
-                <p class="price">29.99€</p>
-                <p>Description brève du produit 1.</p>
-                <button type="button">Ajouter au panier</button>
-            </div><div class="product">
-                <img src="Images/produit1.jpg" alt="Nom du produit 1">
-                <h3>Nom du produit 1</h3>
-                <p class="price">29.99€</p>
-                <p>Description brève du produit 1.</p>
-                <button type="button">Ajouter au panier</button>
-            </div><div class="product">
-                <img src="Images/produit1.jpg" alt="Nom du produit 1">
-                <h3>Nom du produit 1</h3>
-                <p class="price">29.99€</p>
-                <p>Description brève du produit 1.</p>
-                <button type="button">Ajouter au panier</button>
-            </div><div class="product">
-                <img src="Images/produit1.jpg" alt="Nom du produit 1">
-                <h3>Nom du produit 1</h3>
-                <p class="price">29.99€</p>
-                <p>Description brève du produit 1.</p>
-                <button type="button">Ajouter au panier</button>
-            </div><div class="product">
-                <img src="Images/produit1.jpg" alt="Nom du produit 1">
-                <h3>Nom du produit 1</h3>
-                <p class="price">29.99€</p>
-                <p>Description brève du produit 1.</p>
-                <button type="button">Ajouter au panier</button>
-            </div>
-            <div class="product">
-                <img src="Images/produit1.jpg" alt="Nom du produit 1">
-                <h3>Nom du produit 1</h3>
-                <p class="price">29.99€</p>
-                <p>Description brève du produit 1.</p>
-                <button type="button">Ajouter au panier</button>
-            </div><div class="product">
-                <img src="Images/produit1.jpg" alt="Nom du produit 1">
-                <h3>Nom du produit 1</h3>
-                <p class="price">29.99€</p>
-                <p>Description brève du produit 1.</p>
-                <button type="button">Ajouter au panier</button>
-            </div><div class="product">
-                <img src="Images/produit1.jpg" alt="Nom du produit 1">
-                <h3>Nom du produit 1</h3>
-                <p class="price">29.99€</p>
-                <p>Description brève du produit 1.</p>
-                <button type="button">Ajouter au panier</button>
-            </div><div class="product">
-                <img src="Images/produit1.jpg" alt="Nom du produit 1">
-                <h3>Nom du produit 1</h3>
-                <p class="price">29.99€</p>
-                <p>Description brève du produit 1.</p>
-                <button type="button">Ajouter au panier</button>
-            </div><div class="product">
-                <img src="Images/produit1.jpg" alt="Nom du produit 1">
-                <h3>Nom du produit 1</h3>
-                <p class="price">29.99€</p>
-                <p>Description brève du produit 1.</p>
-                <button type="button">Ajouter au panier</button>
-            </div><div class="product">
-                <img src="Images/produit1.jpg" alt="Nom du produit 1">
-                <h3>Nom du produit 1</h3>
-                <p class="price">29.99€</p>
-                <p>Description brève du produit 1.</p>
-                <button type="button">Ajouter au panier</button>
-            </div><div class="product">
-                <img src="Images/produit1.jpg" alt="Nom du produit 1">
-                <h3>Nom du produit 1</h3>
-                <p class="price">29.99€</p>
-                <p>Description brève du produit 1.</p>
-                <button type="button">Ajouter au panier</button>
-            </div>
+        addToCartButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                let productName = this.previousElementSibling.previousElementSibling.textContent;
+                addToCart(this, productName);
+            });
+        });
+    });
+            </script>
+            
+            
 
     </main>
     

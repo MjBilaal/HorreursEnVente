@@ -227,3 +227,11 @@ button {
 button:hover {
     background-color: darkgray;
 }
+@keyframes addedToCart {
+    0% { background-color: green; color: white; }
+    100% { background-color: transparent; color: black; }
+}
+
+.added-to-cart {
+    animation: addedToCart 2s ease;
+}

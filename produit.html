@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="fr">
 <head>
+    <!-- Metadata et liens vers les feuilles de style -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,31 +8,37 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header -->
+    <!-- En-tête de la page -->
     <header>
         <div class="header">
-            <img src="Images/logo.png" alt="Logo Horreur en Vente" id="logo">
+            <!-- Logo avec lien de redirection vers l'index -->
+            <a href="index.html"><img src="Images/logo.png" alt="Logo Horreur en Vente" id="logo"></a>
+            <!-- Barre de navigation -->
             <nav class="navbar">
                 <ul class="menu">
-                    <li><a href="tous-les-produits.html">Tous les produits</a></li>
+                    <!-- Lien vers la page de tous les produits -->
+                    <li><a href="produit.html">Tous les produits</a></li>
+                    <!-- Dropdown pour les masques avec liens de redirection -->
                     <li class="dropdown">
-                        <a href="javascript:void(0)" class="dropbtn">Masques</a>
+                        <a href="masques.html" class="dropbtn">Masques</a>
                         <div class="dropdown-content">
                             <a href="#">Halloween</a>
                             <a href="#">Personnages de film</a>
                             <a href="#">Masques animaux</a>
                         </div>
                     </li>
+                    <!-- Dropdown pour les costumes avec liens de redirection -->
                     <li class="dropdown">
-                        <a href="javascript:void(0)" class="dropbtn">Costumes</a>
+                        <a href="costumes.html" class="dropbtn">Costumes</a>
                         <div class="dropdown-content">
                             <a href="#">Filles</a>
                             <a href="#">Garçons</a>
                             <a href="#">Adultes</a>
                         </div>
                     </li>
+                    <!-- Dropdown pour les licences phares avec liens de redirection -->
                     <li class="dropdown">
-                        <a href="javascript:void(0)" class="dropbtn">Licences phares</a>
+                        <a href="licences-phares.html" class="dropbtn">Licences phares</a>
                         <div class="dropdown-content">
                             <a href="#">Films d'horreur</a>
                             <a href="#">Séries TV</a>
@@ -40,67 +46,16 @@
                         </div>
                     </li>
                 </ul>
+                <!-- Menu du compte et panier -->
                 <ul class="menu account-menu">
-                    <li><a href="panier.html">Panier <span id="cart-count">0</span></a></li>
+                    <li><a href="panier.html">Panier</a></li>
                     <li><a href="compte-client.html">Mon compte client</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main>
-
- <div class="products-container">
-
-    <div class="product">
-                <img src="Images/produit1.jpg" alt="Nom du produit 1">
-                <h3>Nom du produit 1</h3>
-                <p class="price">29.99€</p>
-                <p>Description brève du produit 1.</p>
-                <button type="button">Ajouter au panier</button>
-            </div>
-
-            <script>
-                let cartCount = 0;
-            
-                // Mettre à jour le nombre d'articles dans le panier
-                function updateCartCount() {
-                    document.getElementById('cart-count').textContent = cartCount;
-                }
-            
-                // Ajouter au panier et animer le bouton
-                function addToCart(button, productName) {
-                    // Ajout de la classe pour déclencher l'animation
-                    button.classList.add('added-to-cart');
-                    button.textContent = "Ajouté au panier";
-            
-                    // Incrémenter le compteur du panier
-                    cartCount++;
-                    updateCartCount();
-            
-                    // Retirer la classe après 2 secondes
-                    setTimeout(() => {
-                        button.classList.remove('added-to-cart');
-                        button.textContent = "Ajouter au panier";
-                    }, 2000);
-                }
-            
-                // Initialisation des boutons d'ajout au panier
-                document.addEventListener('DOMContentLoaded', (event) => {
-                    let addToCartButtons = document.querySelectorAll('.product button');
-            
-                    addToCartButtons.forEach(button => {
-                        button.addEventListener('click', function() {
-                            let productName = this.previousElementSibling.previousElementSibling.textContent;
-                            addToCart(this, productName);
-                        });
-                    });
-                });
-            </script>
-            
-            
-            
-
+    <!-- Contenu principal de la page -->
     </main>
     
     <!-- Footer -->

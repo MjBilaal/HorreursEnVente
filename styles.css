@@ -245,3 +245,36 @@ button:hover {
     margin-left: 4px;
     font-size: 0.8em;
 }
+
+.product-container {
+    display: flex; /* Utilisation de Flexbox */
+    align-items: start; /* Aligner les éléments en haut */
+    justify-content: space-around; /* Espacer les éléments */
+    padding: 20px; /* Ajouter un peu d'espace autour */
+    max-width: 1200px; /* Largeur maximale du conteneur */
+    margin: 0 auto; /* Centrer dans la page */
+}
+
+.product-image img {
+    max-width: 500px; /* Largeur maximale pour l'image */
+    height: auto; /* Garder le ratio de l'image */
+    margin-right: 20px; /* Espace entre l'image et les détails */
+}
+
+.product-details {
+    flex: 1; /* Prendre l'espace restant */
+    padding: 10px; /* Padding autour des détails */
+}
+
+.add-to-cart-btn {
+    background-color: #007bff; /* Couleur du fond */
+    color: white; /* Couleur du texte */
+    padding: 10px 20px; /* Padding intérieur */
+    border: none; /* Pas de bordure */
+    border-radius: 5px; /* Bordures arrondies */
+    cursor: pointer; /* Curseur en forme de pointeur */
+}
+
+.add-to-cart-btn:hover {
+    background-color: #0056b3; /* Changement de couleur au survol */
+}

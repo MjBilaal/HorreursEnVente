@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="fr">
 <head>
     <!-- Metadata et liens vers les feuilles de style -->
     <meta charset="UTF-8">
@@ -17,8 +16,7 @@
             <!-- Barre de navigation -->
             <nav class="navbar">
                 <ul class="menu">
-                    <!-- Lien vers la page de tous les produits -->
-                    <li><a href="produit.html">Tous les produits</a></li>
+                
                     <!-- Dropdown pour les masques avec liens de redirection -->
                     <li class="dropdown">
                         <a href="masques.html" class="dropbtn">Masques</a>
@@ -48,8 +46,9 @@
                     </li>
                 </ul>
                 <!-- Menu du compte et panier -->
+                
                 <ul class="menu account-menu">
-                    <li><a href="panier.html">Panier</a></li>
+                    <li><a href="panier.html">Panier <span id="cart-count">0</span></a></li>
                     <li><a href="compte-client.html">Mon compte client</a></li>
                 </ul>
             </nav>
@@ -57,31 +56,7 @@
     </header>
 
     <!-- Contenu principal de la page -->
-
     <main>
-        <div class="product-container">
-            <!-- Section de gauche avec image du produit -->
-            <div class="product-image">
-                <img src="Images/image98.jpg" alt="Nom du Produit">
-            </div>
-
-            <!-- Section de droite avec détails du produit -->
-            <div class="product-details">
-                <h1>Nom du Produit</h1>
-                <p class="product-description">Description détaillée du produit...</p>
-                <p class="product-price">Prix: XX,XX €</p>
-                
-                <!-- Section pour sélectionner la quantité -->
-                <div class="quantity-selector">
-                    <label for="quantity">Quantité :</label>
-                    <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
-                </div>
-
-                <!-- Bouton Ajouter au panier -->
-                <button type="button" class="add-to-cart-btn">Ajouter au panier</button>
-            </div>
-        </div>
-    </main>
 
     <!-- Pied de page -->
     <footer>

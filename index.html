@@ -16,8 +16,6 @@
             <!-- Barre de navigation -->
             <nav class="navbar">
                 <ul class="menu">
-                    <!-- Lien vers la page de tous les produits -->
-                    <li><a href="produit.html">Tous les produits</a></li>
                     <!-- Dropdown pour les masques avec liens de redirection -->
                     <li class="dropdown">
                         <a href="masques.html" class="dropbtn">Masques</a>
@@ -47,10 +45,12 @@
                     </li>
                 </ul>
                 <!-- Menu du compte et panier -->
-                <ul class="menu account-menu">
-                    <li><a href="panier.html">Panier</a></li>
+              
+              <ul class="menu account-menu">
+                    <li><a href="panier.html">Panier <span id="cart-count">0</span></a></li>
                     <li><a href="compte-client.html">Mon compte client</a></li>
                 </ul>
+
             </nav>
         </div>
     </header>
@@ -65,15 +65,15 @@
             </section>
             <!-- Section pour découvrir les produits -->
             <section class="discover">
-                <button onclick="window.location.href='tous-les-produits.html';">Découvrez nos produits</button>
+                <button onclick="window.location.href='masques.html';">Découvrez nos produits</button>
             </section>
         </div>
         <!-- Section des avis sur les produits -->
         <div class="product-reviews">
             <!-- Avis sur le produit 1 -->
             <div class="product-review">
-                <a href="page-produit1.html"> <!-- Ajout du lien vers la page du produit -->
-                    <img src="Images/image99.jpg" alt="Produit 1">
+                <a href="Produit1-LotMasques.html"> <!-- Ajout du lien vers la page du produit -->
+                    <img src="Images/image99.jpg" alt="Produit 1" style="width: 450px; height: auto;">
                     <p>4 masques horreurs</p>
                 </a>
                 <div class="review-card">
@@ -84,8 +84,8 @@
             </div>
             <!-- Avis sur le produit 2 -->
             <div class="product-review">
-                <a href="page-produit2.html"> <!-- Ajout du lien vers la page du produit -->
-                <img src="Images/image98.jpg" alt="Produit 2">
+                <a href="Produit2-demon.html"> <!-- Ajout du lien vers la page du produit -->
+                <img src="Images/image98.jpg" alt="Produit 2" style="width: 450px; height: auto;">
                 <p>Costume de clown effrayant</p>
                 <div class="review-card">
                     <div class="reviewer-name">Jane Smith</div>
@@ -95,8 +95,8 @@
             </div>
             <!-- Avis sur le produit 3 -->
             <div class="product-review">
-                <a href="page-produit3.html"> <!-- Ajout du lien vers la page du produit -->
-                <img src="Images/image97.jpg" alt="Produit 3">
+                <a href="Produit9-Tenuegarcon.html"> <!-- Ajout du lien vers la page du produit -->
+                <img src="Images/image97.jpg" alt="Produit 3" style="width: 450px; height: auto;">
                 <p>Coffret DVD Shining / ÇA</p>
                 <div class="review-card">
                     <div class="reviewer-name">Alice Martin</div>

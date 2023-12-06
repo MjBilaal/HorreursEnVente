@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<head>
+    <!-- Metadata et liens vers les feuilles de style -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horreur en vente</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- En-tête de la page -->
+    <header>
+        <div class="header">
+            <!-- Logo avec lien de redirection vers l'index -->
+            <a href="index.html"><img src="Images/logo.png" alt="Logo Horreur en Vente" id="logo"></a>
+            <!-- Barre de navigation -->
+            <nav class="navbar">
+                <ul class="menu">
+                    
+                    <!-- Dropdown pour les masques avec liens de redirection -->
+                    <li class="dropdown">
+                        <a href="masques.html" class="dropbtn">Masques</a>
+                        <div class="dropdown-content">
+                            <a href="#">Halloween</a>
+                            <a href="#">Personnages de film</a>
+                            <a href="#">Masques animaux</a>
+                        </div>
+                    </li>
+                    <!-- Dropdown pour les costumes avec liens de redirection -->
+                    <li class="dropdown">
+                        <a href="costumes.html" class="dropbtn">Costumes</a>
+                        <div class="dropdown-content">
+                            <a href="#">Filles</a>
+                            <a href="#">Garçons</a>
+                            <a href="#">Adultes</a>
+                        </div>
+                    </li>
+                    <!-- Dropdown pour les licences phares avec liens de redirection -->
+                    <li class="dropdown">
+                        <a href="licences-phares.html" class="dropbtn">Licences phares</a>
+                        <div class="dropdown-content">
+                            <a href="#">Films d'horreur</a>
+                            <a href="#">Séries TV</a>
+                            <a href="#">Jeux vidéo</a>
+                        </div>
+                    </li>
+                </ul>
+                <!-- Menu du compte et panier -->
+               
+                <ul class="menu account-menu">
+                    <li><a href="panier.html">Panier <span id="cart-count">0</span></a></li>
+                    <li><a href="compte-client.html">Mon compte client</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenu principal de la page -->
+    <main>
+        <div class="product-container">
+            <!-- Section de gauche avec image du produit -->
+            <div class="product-image">
+                <img src="Images/couplevampire.png" alt="costume de vampire pour adulte">
+            </div>
+
+            <!-- Section de droite avec détails du produit -->
+            <div class="product-details">
+                <h1>Costume de vampire pour adulte</h1>
+                <p class="product-description">Transformez-vous en une créature de la nuit avec notre costume de vampire pour adulte, une tenue raffinée et élégante qui capture l'essence du vampirisme. Cette création exquise est parfaite pour les soirées costumées, les fêtes d'Halloween ou les événements thématiques.
+
+                    La cape longue et fluide, d'un rouge profond, ajoute une touche de mystère et de sophistication à l'ensemble. Le gilet noir orné de détails subtils, comme des broderies gothiques, crée une allure aristocratique, tandis que le jabot blanc ajoute une note de vintage à l'ensemble.
+                    
+                    Le costume comprend également une paire de canines réalistes pour parfaire votre transformation en vampire. Associez ce costume à un maquillage de vampire saisissant et à une coiffure sombre pour un effet final époustouflant.</p>
+                <p class="product-price">Prix: 89.99 €</p>
+                
+                <!-- Section pour sélectionner la quantité -->
+                <div class="quantity-selector">
+                    <label for="quantity">Quantité :</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
+                </div>
+
+                <!-- Bouton Ajouter au panier -->
+                <button type="button" class="add-to-cart-btn">Ajouter au panier</button>
+                <!-- Section des évaluations -->
+                <div class="ratings">
+                    <span class="stars">★★★★☆</span>
+                    <span class="reviews">(178 avis)</span>
+                </div>
+                <div class="customer-reviews">
+                    <h2>Ce qu'en ont pensé les clients:</h2>
+                    <div class="review">
+                        <span class="stars">★★★★☆</span>
+                        <p><strong>Avis de Alex:</strong><p>Ce costume a vraiment dépassé mes attentes! La qualité est exceptionnelle, et la cape donne une sensation de grandeur. Je me sentais comme Dracula lui-même!</p>
+                    </div>
+                    <div class="review">
+                        <span class="stars">★★★★☆</span>
+                        <p><strong>Avis de  Sarah:</strong><p>Un choix parfait pour une soirée à thème vampire. La cape est magnifique, et l'ensemble est confortable à porter. Mes amis ont adoré l'effet vampirique</p>
+                    </div>
+                    <div class="review">
+                        <span class="stars">★★★★★</span>
+                        <p><strong>Avis de MaxStyle:</strong><p>J'ai reçu de nombreux compliments lors de la soirée costumée. Le gilet ajoute une touche de sophistication, et la cape flottante crée une ambiance mystique. Un excellent choix pour les amateurs de vampires!</p>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <ul class="footer-menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="qui-sommes-nous.html">Qui sommes-nous?</a></li>
+            <li><a href="pourquoi-ce-site.html">Pourquoi ce site?</a></li>
+            <li><a href="paiement-et-livraison.html">Paiement, livraison et droits de rétractation</a></li>
+            <li><a href="faq.html">Questions fréquentes</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

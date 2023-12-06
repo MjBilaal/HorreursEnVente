@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<head>
+    <!-- Metadata et liens vers les feuilles de style -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horreur en vente</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- En-tête de la page -->
+    <header>
+        <div class="header">
+            <!-- Logo avec lien de redirection vers l'index -->
+            <a href="index.html"><img src="Images/logo.png" alt="Logo Horreur en Vente" id="logo"></a>
+            <!-- Barre de navigation -->
+            <nav class="navbar">
+                <ul class="menu">
+                 
+                    <!-- Dropdown pour les masques avec liens de redirection -->
+                    <li class="dropdown">
+                        <a href="masques.html" class="dropbtn">Masques</a>
+                        <div class="dropdown-content">
+                            <a href="#">Halloween</a>
+                            <a href="#">Personnages de film</a>
+                            <a href="#">Masques animaux</a>
+                        </div>
+                    </li>
+                    <!-- Dropdown pour les costumes avec liens de redirection -->
+                    <li class="dropdown">
+                        <a href="costumes.html" class="dropbtn">Costumes</a>
+                        <div class="dropdown-content">
+                            <a href="#">Filles</a>
+                            <a href="#">Garçons</a>
+                            <a href="#">Adultes</a>
+                        </div>
+                    </li>
+                    <!-- Dropdown pour les licences phares avec liens de redirection -->
+                    <li class="dropdown">
+                        <a href="licences-phares.html" class="dropbtn">Licences phares</a>
+                        <div class="dropdown-content">
+                            <a href="#">Films d'horreur</a>
+                            <a href="#">Séries TV</a>
+                            <a href="#">Jeux vidéo</a>
+                        </div>
+                    </li>
+                </ul>
+                <!-- Menu du compte et panier -->
+                
+                <ul class="menu account-menu">
+                    <li><a href="panier.html">Panier <span id="cart-count">0</span></a></li>
+                    <li><a href="compte-client.html">Mon compte client</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenu principal de la page -->
+    <main>
+        <div class="product-container">
+            <!-- Section de gauche avec image du produit -->
+            <div class="product-image">
+                <img src="Images/faucheur.jpg" alt="costume de faucheur pour garçon">
+            </div>
+
+            <!-- Section de droite avec détails du produit -->
+            <div class="product-details">
+                <h1>Costume de faucheur pour garçon</h1>
+                <p class="product-description">Plongez dans l'obscurité avec notre costume de Faucheur pour garçon, une création saisissante pour les amateurs de frissons. Le manteau long et sombre ajoute une touche mystérieuse, tandis que la capuche dissimule le visage dans l'ombre. Les détails effrayants, tels que les faux clous et la faux factice, font de ce costume le choix idéal pour une soirée d'Halloween terrifiante. Conçu avec soin, ce costume offre à votre enfant une allure sinistre qui en fera la vedette de la nuit d'Halloween. Le prix de l'horreur est à portée de main!</p>
+                <p class="product-price">Prix: 35.99 €</p>
+                
+                <!-- Section pour sélectionner la quantité -->
+                <div class="quantity-selector">
+                    <label for="quantity">Quantité :</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
+                </div>
+
+                <!-- Bouton Ajouter au panier -->
+                <button type="button" class="add-to-cart-btn">Ajouter au panier</button>
+                <!-- Section des évaluations -->
+                <div class="ratings">
+                    <span class="stars">★★★★☆</span>
+                    <span class="reviews">(179 avis)</span>
+                </div>
+                <div class="customer-reviews">
+                    <h2>Ce qu'en ont pensé les clients:</h2>
+                    <div class="review">
+                        <span class="stars">★★★★☆</span>
+                        <p><strong>Avis de Lucas84:</strong><p>Ce costume de Faucheur est incroyable! Mon fils l'a adoré. La qualité est excellente, et les détails effrayants sont vraiment bien faits. Il était la terreur du quartier à Halloween, et tout le monde lui demandait d'où venait son costume.</p>
+                    </div>
+                    <div class="review">
+                        <span class="stars">★★★☆☆</span>
+                        <p><strong>Avis de LauraFright21:</strong><p>Mon petit garçon était ravi de ce costume de Faucheur. La capuche ajoutait une touche mystique, et la faux factice était assez réaliste. Cependant, le tissu était un peu mince. Dans l'ensemble, une bonne expérience.</p>
+                    </div>
+                    <div class="review">
+                        <span class="stars">★★★★☆</span>
+                        <p><strong>Avis de MidnightParent:</strong><p>Le costume de Faucheur a dépassé toutes mes attentes. La taille était parfaite, et la qualité était remarquable. Mon fils était excité de le porter pour Halloween. C'était le choix idéal pour une nuit effrayante. Recommande vivement!</p>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <ul class="footer-menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="qui-sommes-nous.html">Qui sommes-nous?</a></li>
+            <li><a href="pourquoi-ce-site.html">Pourquoi ce site?</a></li>
+            <li><a href="paiement-et-livraison.html">Paiement, livraison et droits de rétractation</a></li>
+            <li><a href="faq.html">Questions fréquentes</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

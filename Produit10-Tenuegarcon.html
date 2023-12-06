@@ -47,8 +47,9 @@
                     </li>
                 </ul>
                 <!-- Menu du compte et panier -->
+               
                 <ul class="menu account-menu">
-                    <li><a href="panier.html">Panier</a></li>
+                    <li><a href="panier.html">Panier <span id="cart-count">0</span></a></li>
                     <li><a href="compte-client.html">Mon compte client</a></li>
                 </ul>
             </nav>
@@ -60,14 +61,18 @@
         <div class="product-container">
             <!-- Section de gauche avec image du produit -->
             <div class="product-image">
-                <img src="Images/image99.jpg" alt="Nom du Produit">
+                <img src="Images/clowngarcon.jpg" alt="costume de clown pour garçon">
             </div>
 
             <!-- Section de droite avec détails du produit -->
             <div class="product-details">
-                <h1>Nom du Produit</h1>
-                <p class="product-description">Description détaillée du produit...</p>
-                <p class="product-price">Prix: XX,XX €</p>
+                <h1>Costume de clown pour garçon</h1>
+                <p class="product-description">Plongez dans l'obscurité de l'horreur avec notre costume de clown effrayant pour garçon, idéal pour Halloween ou toute occasion sinistre. La combinaison à rayures noires et rouges crée une ambiance mystérieuse, tandis que le masque de clown horripilant, doté d'un sourire démesuré et d'yeux perçants, instille la terreur.
+
+                    Le costume est agrémenté de détails effrayants, tels que des touches de faux sang, ajoutant une dimension macabre au look. Les accessoires, comme les gants noirs effilés et le chapeau de clown déchiré, complètent cette tenue cauchemardesque.
+                    
+                    Offrez à votre enfant une expérience mémorable et effrayante avec ce costume de clown qui fera sensation lors des festivités d'Halloween.</p>
+                <p class="product-price">Prix: 35.99 €</p>
                 
                 <!-- Section pour sélectionner la quantité -->
                 <div class="quantity-selector">
@@ -77,46 +82,29 @@
 
                 <!-- Bouton Ajouter au panier -->
                 <button type="button" class="add-to-cart-btn">Ajouter au panier</button>
+                <!-- Section des évaluations -->
+                <div class="ratings">
+                    <span class="stars">★★★★☆</span>
+                    <span class="reviews">(206 avis)</span>
+                </div>
+                <div class="customer-reviews">
+                    <h2>Ce qu'en ont pensé les clients:</h2>
+                    <div class="review">
+                        <span class="stars">★★★★☆</span>
+                        <p><strong>Avis de Tom:</strong><p>Le costume a vraiment effrayé tous les enfants du quartier! Les détails du masque sont saisissants, et la combinaison ajoute une touche sinistre. Mon fils l'adore!</p>
+                    </div>
+                    <div class="review">
+                        <span class="stars">★★★☆☆</span>
+                        <p><strong>Avis de LauraFright21:</strong><p>Le costume est de grande qualité, mais le masque peut être un peu effrayant pour les plus jeunes. Mon petit fils a adoré, mais certains amis ont été un peu intimidés.</p>
+                    </div>
+                    <div class="review">
+                        <span class="stars">★★★★☆</span>
+                        <p><strong>Avis de EffroiEnfants:</strong><p>Parfait pour une soirée d'Halloween effrayante! Le masque est vraiment effrayant, et la qualité globale est excellente. Mon fils a volé la vedette avec ce costume terrifiant!</p>
+                    </div>
+                </div>
+            
             </div>
         </div>
-
-        <script>
-            let cartCount = 0;
-        
-            // Mettre à jour le nombre d'articles dans le panier
-            function updateCartCount() {
-                document.getElementById('cart-count').textContent = cartCount;
-            }
-        
-            // Ajouter au panier et animer le bouton
-            function addToCart(button, productName) {
-                // Ajout de la classe pour déclencher l'animation
-                button.classList.add('added-to-cart');
-                button.textContent = "Ajouté au panier";
-        
-                // Incrémenter le compteur du panier
-                cartCount++;
-                updateCartCount();
-        
-                // Retirer la classe après 2 secondes
-                setTimeout(() => {
-                    button.classList.remove('added-to-cart');
-                    button.textContent = "Ajouter au panier";
-                }, 2000);
-            }
-        
-            // Initialisation des boutons d'ajout au panier
-            document.addEventListener('DOMContentLoaded', (event) => {
-                let addToCartButtons = document.querySelectorAll('.product button');
-        
-                addToCartButtons.forEach(button => {
-                    button.addEventListener('click', function() {
-                        let productName = this.previousElementSibling.previousElementSibling.textContent;
-                        addToCart(this, productName);
-                    });
-                });
-            });
-        </script>
     </main>
 
     <!-- Pied de page -->
@@ -129,6 +117,5 @@
             <li><a href="faq.html">Questions fréquentes</a></li>
         </ul>
     </footer>
-
 </body>
 </html>

@@ -13,8 +13,15 @@ if ($connexion->connect_error) {
     die("La connexion à la base de données a échoué : " . $connexion->connect_error);
 }
 
-// Requête SQL pour récupérer des données (remplace cela par ta propre requête)
+// Requête SQL pour récupérer des données
 $requete = "SELECT * FROM nom_table";
 $resultat = $connexion->query($requete);
 
+// Vérification de la réussite de la requête
+if (!$resultat) {
+    die("La requête a échoué : " . $connexion->error);
+}
+
+  // Fermeture de la connexion à la base de données
+  $connexion->close();
 ?>

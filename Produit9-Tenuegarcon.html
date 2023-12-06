@@ -57,51 +57,49 @@
     </header>
 
     <!-- Contenu principal de la page -->
+
     <main>
-        <div class="main-content">
-            <!-- Section de mise en avant de produit -->
-            <section class="featured">
-                <h2>Produit à la une</h2>
-                <p>Stock limité!</p>
-            </section>
-            <!-- Section pour découvrir les produits -->
-            <section class="discover">
-                <button onclick="window.location.href='tous-les-produits.html';">Découvrez nos produits</button>
-            </section>
-        </div>
-        <!-- Section des avis sur les produits -->
-        <div class="product-reviews">
-            <!-- Avis sur le produit 1 -->
-            <div class="product-review">
-                <a href="page-produit1.html"> <!-- Ajout du lien vers la page du produit -->
-                    <img src="Images/image99.jpg" alt="Produit 1">
-                    <p>4 masques horreurs</p>
-                </a>
-                <div class="review-card">
-                    <div class="reviewer-name">John Doe</div>
-                    <div class="review-rating">★★★★★</div>
-                    <div class="review-text">Incroyablement terrifiant et de grande qualité !</div>
-                </div>
+        <div class="product-container">
+            <!-- Section de gauche avec image du produit -->
+            <div class="product-image">
+                <img src="Images/faucheur.jpg" alt="costume de faucheur pour garçon">
             </div>
-            <!-- Avis sur le produit 2 -->
-            <div class="product-review">
-                <img src="Images/image98.jpg" alt="Produit 2">
-                <p>Costume de clown effrayant</p>
-                <div class="review-card">
-                    <div class="reviewer-name">Jane Smith</div>
-                    <div class="review-rating">★★★★☆</div>
-                    <div class="review-text">Très bon produit, taille parfaite!</div>
+
+            <!-- Section de droite avec détails du produit -->
+            <div class="product-details">
+                <h1>Costume de faucheur pour garçon</h1>
+                <p class="product-description">Plongez dans l'obscurité avec notre costume de Faucheur pour garçon, une création saisissante pour les amateurs de frissons. Le manteau long et sombre ajoute une touche mystérieuse, tandis que la capuche dissimule le visage dans l'ombre. Les détails effrayants, tels que les faux clous et la faux factice, font de ce costume le choix idéal pour une soirée d'Halloween terrifiante. Conçu avec soin, ce costume offre à votre enfant une allure sinistre qui en fera la vedette de la nuit d'Halloween. Le prix de l'horreur est à portée de main!</p>
+                <p class="product-price">Prix: 35.99 €</p>
+                
+                <!-- Section pour sélectionner la quantité -->
+                <div class="quantity-selector">
+                    <label for="quantity">Quantité :</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
                 </div>
-            </div>
-            <!-- Avis sur le produit 3 -->
-            <div class="product-review">
-                <img src="Images/image97.jpg" alt="Produit 3">
-                <p>Coffret DVD Shining / ÇA</p>
-                <div class="review-card">
-                    <div class="reviewer-name">Alice Martin</div>
-                    <div class="review-rating">★★★☆☆</div>
-                    <div class="review-text">Bien reçu le colis, des chef d'oeuvres ces 2 films.</div>
+
+                <!-- Bouton Ajouter au panier -->
+                <button type="button" class="add-to-cart-btn">Ajouter au panier</button>
+                <!-- Section des évaluations -->
+                <div class="ratings">
+                    <span class="stars">★★★★☆</span>
+                    <span class="reviews">(179 avis)</span>
                 </div>
+                <div class="customer-reviews">
+                    <h2>Ce qu'en ont pensé les clients:</h2>
+                    <div class="review">
+                        <span class="stars">★★★★☆</span>
+                        <p><strong>Avis de Lucas84:</strong><p>Ce costume de Faucheur est incroyable! Mon fils l'a adoré. La qualité est excellente, et les détails effrayants sont vraiment bien faits. Il était la terreur du quartier à Halloween, et tout le monde lui demandait d'où venait son costume.</p>
+                    </div>
+                    <div class="review">
+                        <span class="stars">★★★☆☆</span>
+                        <p><strong>Avis de LauraFright21:</strong><p>Mon petit garçon était ravi de ce costume de Faucheur. La capuche ajoutait une touche mystique, et la faux factice était assez réaliste. Cependant, le tissu était un peu mince. Dans l'ensemble, une bonne expérience.</p>
+                    </div>
+                    <div class="review">
+                        <span class="stars">★★★★☆</span>
+                        <p><strong>Avis de MidnightParent:</strong><p>Le costume de Faucheur a dépassé toutes mes attentes. La taille était parfaite, et la qualité était remarquable. Mon fils était excité de le porter pour Halloween. C'était le choix idéal pour une nuit effrayante. Recommande vivement!</p>
+                    </div>
+                </div>
+            
             </div>
         </div>
     </main>

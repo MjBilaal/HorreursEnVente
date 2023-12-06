@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horreur en vente</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header">
+            <img src="Images/logo.png" alt="Logo Horreur en Vente" id="logo">
+            <!-- Barre de navigation -->
+            <nav class="navbar">
+                 <!-- Menu principal -->
+                <ul class="menu">
+                    <li><a href="tous-les-produits.html">Tous les produits</a></li>
+                     <!-- Menu déroulant "Masques" -->
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Masques</a>
+                        <div class="dropdown-content">
+                            <a href="#">Halloween</a>
+                            <a href="#">Personnages de film</a>
+                            <a href="#">Masques animaux</a>
+                        </div>
+                    </li>
+                     <!-- Menu déroulant "Costumes" -->
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Costumes</a>
+                        <div class="dropdown-content">
+                            <a href="#">Filles</a>
+                            <a href="#">Garçons</a>
+                            <a href="#">Adultes</a>
+                        </div>
+                    </li>
+                    <!-- Menu déroulant "Licences phares" -->
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Licences phares</a>
+                        <div class="dropdown-content">
+                            <a href="#">Films d'horreur</a>
+                            <a href="#">Séries TV</a>
+                            <a href="#">Jeux vidéo</a>
+                        </div>
+                    </li>
+                </ul>
+                <!-- Menu du compte utilisateur -->
+                <ul class="menu account-menu">
+                    <li><a href="panier.html">Panier <span id="cart-count">0</span></a></li>
+                    <li><a href="compte-client.html">Mon compte client</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Contenu principal -->
+    <main>
+        <div class="products-wrapper">
+            <!-- Conteneur des produits -->
+            <div class="products-container">
+                <!-- Produit 1 -->
+                <div class="product">
+                    <img src="Images/image99.jpg" alt="4 masques">
+                    <!-- Section du nom -->
+                    <h3>4 Masques d'horreur</h3>
+                    <!-- Section des évaluations -->
+                    <div class="ratings">
+                        <span class="stars">★★★☆☆</span>
+                        <span class="reviews">(66 avis)</span>
+                    </div>
+                    <!-- Section des prix -->
+                    <p class="price">49.99€</p>
+                    <!-- Section de la description -->
+                    <p>"Qu'il s'agissent de fêter Halloween, ou pour se créer des frayeurs en famille, optez pour ce superbe pack de quatre masques différents plus effrayants les uns que les autres!."</p>
+                    <button type="button">Ajouter au panier</button>
+                </div>
+
+                <!-- Produit 2 -->
+                <div class="product">
+                    <img src="Images/demon.jpg" alt="Masque de démon">
+                    <!-- Section du nom -->
+                    <h3>Masque de démon</h3>
+                    <!-- Section des évaluations -->
+                    <div class="ratings">
+                        <span class="stars">★★★★★</span>
+                        <span class="reviews">(39 avis)</span>
+                    </div>
+                    <!-- Section des prix -->
+                    <p class="price">74.99€</p>
+                    <!-- Section de la description -->
+                    <p>"Découvrez l'ultime masque de démon, une création terrifiante d'une beauté macabre. Ses cornes menaçantes et ses détails démoniaques en font l'accessoire parfait pour une expérience effrayante à chaque fête. Confortable et saisissant, ce masque incarne l'horreur à l'état pur. Préparez-vous à inspirer la terreur avec ce chef-d'œuvre de l'obscurité."</p>
+                    <button type="button">Ajouter au panier</button>
+                </div>
+
+                <!-- Produit 3 -->
+                <div class="product">
+                    <img src="Images/myersMasque.jpg" alt="Masque de Michael Myers">
+                    <!-- Section du nom -->
+                    <h3>Masque de Michael Myers</h3>
+                    <!-- Section des évaluations -->
+                    <div class="ratings">
+                        <span class="stars">★★★★☆</span>
+                        <span class="reviews">(578 avis)</span>
+                    </div>
+                    <!-- Section des prix -->
+                    <p class="price">59.99€</p>
+                    <!-- Section de la description -->
+                    <p>"Découvrez l'horreur emblématique avec notre masque de Michael Myers, une reproduction fidèle du visage sinistre du célèbre tueur en série. Les détails authentiques, la blancheur glaciale du masque et le regard insensible en font l'accessoire parfait pour une nuit d'Halloween inoubliable. Incarnez le mal incarné avec ce masque terrifiant."</p>
+                    <button type="button">Ajouter au panier</button>
+                </div>
+
+                <!-- Produit 4 -->
+                <div class="product">
+                    <img src="Images/hockey.jpg" alt="Masque de Jason">
+                    <!-- Section du nom -->
+                    <h3>Masque de Jason</h3>
+                    <!-- Section des évaluations -->
+                    <div class="ratings">
+                        <span class="stars">★★★★☆</span>
+                        <span class="reviews">(463 avis)</span>
+                    </div>
+                    <!-- Section des prix -->
+                    <p class="price">29.99€</p>
+                    <!-- Section de la description -->
+                    <p>"Plongez dans l'univers cauchemardesque de Jason Voorhees avec notre masque emblématique. Reproduisant les cicatrices de ce tueur légendaire, ce masque incarne la terreur des vendredis 13. Que ce soit pour une soirée costumée ou une fanfare horrifique, ce masque de Jason vous transformera en icône de l'horreur, prêt à semer la terreur partout où vous irez."</p>
+                    <button type="button">Ajouter au panier</button>
+                </div>
+
+                <!-- Produit 5 -->
+                <div class="product">
+                    <img src="Images/loup.jpg" alt="Masque de loup">
+                    <!-- Section du nom -->
+                    <h3>Masque de loup</h3>
+                    <!-- Section des évaluations -->
+                    <div class="ratings">
+                        <span class="stars">★★★☆☆</span>
+                        <span class="reviews">(105 avis)</span>
+                    </div>
+                    <!-- Section des prix -->
+                    <p class="price">59.99€</p>
+                    <p>"Plongez dans l'atmosphère mystique d'Halloween avec notre masque de loup ensorcelant. Ses détails saisissants, inspirés du monde des loups-garous, ajoutent une dose de mystère à votre déguisement. Que vous soyez en quête d'une ambiance effrayante ou d'une touche de magie nocturne, ce masque de loup pour Halloween est le choix idéal."</p>
+                    <!-- Section de la description -->
+                    <button type="button">Ajouter au panier</button>
+                </div>
+
+                <!-- Produit 6 -->
+                <div class="product">
+                    <img src="Images/cochon.jpg" alt="Masque de cochon">
+                    <!-- Section du nom -->
+                    <h3>Masque de cochon</h3>
+                    <!-- Section des évaluations -->
+                    <div class="ratings">
+                        <span class="stars">★★★☆☆</span>
+                        <span class="reviews">(92 avis)</span>
+                    </div>
+                    <!-- Section des prix -->
+                    <p class="price">59.99€</p>
+                    <!-- Section de la description -->
+                    <p>"Éveillez la terreur avec notre masque de cochon effrayant pour Halloween. Inspiré des cauchemars les plus sombres, ce masque macabre est conçu pour instiller la peur et l'épouvante. Les détails sinistres, tels que les yeux perçants et les traits déformés, créent une apparence cauchemardesque. Transformez-vous en une vision terrifiante de l'Halloween avec ce masque de cochon qui hantera les esprits longtemps après la nuit d'Halloween."</p>
+                    <button type="button">Ajouter au panier</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pied de page -->
+    <!-- Footer -->
+    <footer>
+        <!-- Menu du pied de page -->
+        <ul class="footer-menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="qui-sommes-nous.html">Qui sommes-nous?</a></li>
+            <li><a href="pourquoi-ce-site.html">Pourquoi ce site?</a></li>
+            <li><a href="paiement-et-livraison.html">Paiement, livraison et droits de rétractation</a></li>
+            <li><a href="faq.html">Questions fréquentes</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

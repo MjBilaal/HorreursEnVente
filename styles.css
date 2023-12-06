@@ -246,35 +246,109 @@ button:hover {
     font-size: 0.8em;
 }
 
+/* Ajoutez ces styles à votre fichier styles.css */
+
+body {
+    margin: 0;
+    margin-bottom: 50px; /* Ajustez cette valeur selon vos besoins pour éviter que le contenu du bas ne soit caché */
+}
+
+.products-wrapper {
+    height: 80%; /* Ajustez la hauteur en fonction de vos besoins */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px; /* Ajustez la valeur selon vos besoins pour rapprocher les images */
+}
+
+.product {
+    text-align: center; /* Centre le contenu à l'intérieur de chaque produit */
+}
+
+.product img {
+    max-width: 100%; /* Rend les images responsives */
+    height: auto;
+}
+
+.product:nth-child(1),
+.product:nth-child(2) {
+    grid-row: 1;
+}
+
+.product:nth-child(3),
+.product:nth-child(4) {
+    grid-row: 2;
+}
+
+.product:nth-child(5),
+.product:nth-child(6) {
+    grid-row: 3;
+}
+
 .product-container {
-    display: flex; /* Utilisation de Flexbox */
-    align-items: start; /* Aligner les éléments en haut */
-    justify-content: space-around; /* Espacer les éléments */
-    padding: 20px; /* Ajouter un peu d'espace autour */
-    max-width: 1200px; /* Largeur maximale du conteneur */
-    margin: 0 auto; /* Centrer dans la page */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
 }
 
-.product-image img {
-    max-width: 500px; /* Largeur maximale pour l'image */
-    height: auto; /* Garder le ratio de l'image */
-    margin-right: 20px; /* Espace entre l'image et les détails */
+/* Section de gauche avec l'image du produit */
+.product-image {
+    flex: 1; /* Occupe 50% de l'espace disponible */
 }
 
+/* Section de droite avec les détails du produit */
 .product-details {
-    flex: 1; /* Prendre l'espace restant */
-    padding: 10px; /* Padding autour des détails */
+    flex: 1; /* Occupe 50% de l'espace disponible */
+    padding: 0 20px;
+}
+
+/* Style supplémentaire si nécessaire */
+.product-details h1 {
+    color: #333;
+}
+
+.product-description {
+    color: #666;
+}
+
+.product-price {
+    font-weight: bold;
+    color: #f00; /* Rouge pour le prix par exemple */
+}
+
+.quantity-selector {
+    margin-top: 10px;
 }
 
 .add-to-cart-btn {
-    background-color: #007bff; /* Couleur du fond */
-    color: white; /* Couleur du texte */
-    padding: 10px 20px; /* Padding intérieur */
-    border: none; /* Pas de bordure */
-    border-radius: 5px; /* Bordures arrondies */
-    cursor: pointer; /* Curseur en forme de pointeur */
+    background-color: #4caf50; /* Vert par exemple */
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
 }
 
-.add-to-cart-btn:hover {
-    background-color: #0056b3; /* Changement de couleur au survol */
+.ratings {
+    margin-top: 10px;
+    color: #ffcc00; /* Jaune par exemple pour les étoiles */
+}
+
+.customer-reviews {
+    margin-top: 20px;
+}
+
+.review {
+    margin-bottom: 10px;
+}
+
+.stars {
+    color: #ffcc00; /* Couleur des étoiles */
 }

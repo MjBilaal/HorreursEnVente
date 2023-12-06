@@ -57,51 +57,54 @@
     </header>
 
     <!-- Contenu principal de la page -->
+
     <main>
-        <div class="main-content">
-            <!-- Section de mise en avant de produit -->
-            <section class="featured">
-                <h2>Produit à la une</h2>
-                <p>Stock limité!</p>
-            </section>
-            <!-- Section pour découvrir les produits -->
-            <section class="discover">
-                <button onclick="window.location.href='tous-les-produits.html';">Découvrez nos produits</button>
-            </section>
-        </div>
-        <!-- Section des avis sur les produits -->
-        <div class="product-reviews">
-            <!-- Avis sur le produit 1 -->
-            <div class="product-review">
-                <a href="page-produit1.html"> <!-- Ajout du lien vers la page du produit -->
-                    <img src="Images/image99.jpg" alt="Produit 1">
-                    <p>4 masques horreurs</p>
-                </a>
-                <div class="review-card">
-                    <div class="reviewer-name">John Doe</div>
-                    <div class="review-rating">★★★★★</div>
-                    <div class="review-text">Incroyablement terrifiant et de grande qualité !</div>
-                </div>
+        <div class="product-container">
+            <!-- Section de gauche avec image du produit -->
+            <div class="product-image">
+                <img src="Images/image99.jpg" alt="4 Masques d'horreur">
             </div>
-            <!-- Avis sur le produit 2 -->
-            <div class="product-review">
-                <img src="Images/image98.jpg" alt="Produit 2">
-                <p>Costume de clown effrayant</p>
-                <div class="review-card">
-                    <div class="reviewer-name">Jane Smith</div>
-                    <div class="review-rating">★★★★☆</div>
-                    <div class="review-text">Très bon produit, taille parfaite!</div>
+
+            <!-- Section de droite avec détails du produit -->
+            <div class="product-details">
+                <h1>4 Masques d'horreur</h1>
+                <p class="product-description">Transformez votre expérience d'Halloween avec notre lot exclusif de 4 masques effrayants. Chaque masque est soigneusement conçu pour ajouter une touche sinistre à votre costume et faire ressortir l'horreur de la nuit d'Halloween.
+                    Contenu du Lot :
+                    -Masque de Mort Vivant
+                    -Masque de Monstre 
+                    -Masque de Vampire
+                    -Masque de Oni</p>
+                <p class="product-price">Prix: 49.99 €</p>
+                
+                <!-- Section pour sélectionner la quantité -->
+                <div class="quantity-selector">
+                    <label for="quantity">Quantité :</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
                 </div>
-            </div>
-            <!-- Avis sur le produit 3 -->
-            <div class="product-review">
-                <img src="Images/image97.jpg" alt="Produit 3">
-                <p>Coffret DVD Shining / ÇA</p>
-                <div class="review-card">
-                    <div class="reviewer-name">Alice Martin</div>
-                    <div class="review-rating">★★★☆☆</div>
-                    <div class="review-text">Bien reçu le colis, des chef d'oeuvres ces 2 films.</div>
+
+                <!-- Bouton Ajouter au panier -->
+                <button type="button" class="add-to-cart-btn">Ajouter au panier</button>
+                <!-- Section des évaluations -->
+                <div class="ratings">
+                    <span class="stars">★★★☆☆</span>
+                    <span class="reviews">(66 avis)</span>
                 </div>
+                <div class="customer-reviews">
+                    <h2>Ce qu'en ont pensé les clients:</h2>
+                    <div class="review">
+                        <span class="stars">★★★★☆</span>
+                        <p><strong>Avis de Jonathan:</strong><p>Les masques étaient sensationnels! Ils ont vraiment effrayé tout le monde à la fête. La qualité est excellente, et ils étaient confortables à porter.</p>
+                    </div>
+                    <div class="review">
+                        <span class="stars">★★★☆☆</span>
+                        <p><strong>Avis de Emma:</strong><p>Le masque de zombie était super réaliste, mais le masque de démon était un peu grand pour moi. Néanmoins, ils ont ajouté une dimension effrayante à notre groupe d'Halloween.</p>
+                    </div>
+                    <div class="review">
+                        <span class="stars">★★★★☆</span>
+                        <p><strong>Avis de Julia:</strong><p>J'ai adoré l'originalité de chaque masque. Ils étaient bien emballés et ont résisté à une soirée mouvementée. Un excellent rapport qualité-prix.</p>
+                    </div>
+                </div>
+            
             </div>
         </div>
     </main>

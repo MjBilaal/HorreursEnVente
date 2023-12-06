@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Metadata et liens vers les feuilles de style -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horreur en vente</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- En-tête de la page -->
+    <header>
+        <div class="header">
+            <!-- Logo avec lien de redirection vers l'index -->
+            <a href="index.html"><img src="Images/logo.png" alt="Logo Horreur en Vente" id="logo"></a>
+            <!-- Barre de navigation -->
+            <nav class="navbar">
+                <ul class="menu">
+                    <!-- Lien vers la page de tous les produits -->
+                    <li><a href="produit.html">Tous les produits</a></li>
+                    <!-- Dropdown pour les masques avec liens de redirection -->
+                    <li class="dropdown">
+                        <a href="masques.html" class="dropbtn">Masques</a>
+                        <div class="dropdown-content">
+                            <a href="#">Halloween</a>
+                            <a href="#">Personnages de film</a>
+                            <a href="#">Masques animaux</a>
+                        </div>
+                    </li>
+                    <!-- Dropdown pour les costumes avec liens de redirection -->
+                    <li class="dropdown">
+                        <a href="costumes.html" class="dropbtn">Costumes</a>
+                        <div class="dropdown-content">
+                            <a href="#">Filles</a>
+                            <a href="#">Garçons</a>
+                            <a href="#">Adultes</a>
+                        </div>
+                    </li>
+                    <!-- Dropdown pour les licences phares avec liens de redirection -->
+                    <li class="dropdown">
+                        <a href="licences-phares.html" class="dropbtn">Licences phares</a>
+                        <div class="dropdown-content">
+                            <a href="#">Films d'horreur</a>
+                            <a href="#">Séries TV</a>
+                            <a href="#">Jeux vidéo</a>
+                        </div>
+                    </li>
+                </ul>
+                <!-- Menu du compte et panier -->
+                <ul class="menu account-menu">
+                    <li><a href="panier.html">Panier</a></li>
+                    <li><a href="compte-client.html">Mon compte client</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenu principal de la page -->
+
+    <main>
+        <div class="product-container">
+            <!-- Section de gauche avec image du produit -->
+            <div class="product-image">
+                <img src="Images/vampire.jpg" alt="costume de vampire pour fille">
+            </div>
+
+            <!-- Section de droite avec détails du produit -->
+            <div class="product-details">
+                <h1>Costume de vampire pour fille</h1>
+                <p class="product-description">Transformez votre petite en une créature mystique de la nuit avec notre costume de vampire pour fille, spécialement conçu pour Halloween. La robe longue et fluide en tissu satiné noir ajoute une touche d'élégance macabre. Les manches évasées et les détails de dentelle apportent une esthétique gothique.
+                    Le col montant emblématique du vampire, orné de dentelle, crée une silhouette dramatique, ajoutant une touche authentique à l'ensemble du costume. La ceinture ajustée en velours rouge souligne la taille et ajoute une note de couleur frappante, offrant un contraste saisissant avec le noir de la robe. Les accessoires effrayants, tels qu'une fausse dent pointue et des manchettes en dentelle, complètent le look.
+                    Ce costume de vampire pour fille est parfait pour les soirées d'Halloween, les fêtes costumées ou toute autre occasion où votre petite veut révéler son côté sombre et mystérieux. Transformez son Halloween en une aventure magique avec ce costume envoûtant!</p>
+                <p class="product-price">Prix: 39.99 €</p>
+                
+                <!-- Section pour sélectionner la quantité -->
+                <div class="quantity-selector">
+                    <label for="quantity">Quantité :</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
+                </div>
+
+                <!-- Bouton Ajouter au panier -->
+                <button type="button" class="add-to-cart-btn">Ajouter au panier</button>
+                
+                <!-- Section des évaluations -->
+                <div class="ratings">
+                    <span class="stars">★★★★☆</span>
+                    <span class="reviews">(209 avis)</span>
+                </div>
+                <div class="customer-reviews">
+                    <h2>Ce qu'en ont pensé les clients:</h2>
+                    <div class="review">
+                        <span class="stars">★★★★☆</span>
+                        <p><strong>Avis de Marie03:</strong><p>Le costume est magnifique, ma fille l'adore! La robe est bien taillée, mais la ceinture a tendance à se desserrer. Rien qu'une petite retouche ne puisse résoudre. Sinon, parfait pour Halloween!</p>
+                    </div>
+                    <div class="review">
+                        <span class="stars">★★★☆☆</span>
+                        <p><strong>Avis de Albert:</strong><p>Pas mal, mais la qualité du tissu n'est pas exceptionnelle. Ma fille a adoré le style, mais on aurait pu s'attendre à mieux pour le prix. Cela dit, elle était la vampire la plus élégante de la fête!</p>
+                    </div>
+                    <div class="review">
+                        <span class="stars">★★★★★</span>
+                        <p><strong>Avis de SpookyMoony:</strong><p>Le costume est un succès! Ma fille a reçu tellement de compliments. La robe est bien conçue, les détails de dentelle sont charmants. La ceinture tient bien et ajoute une touche de couleur. Parfait pour une soirée effrayante</p>
+                    </div>
+                </div>
+                
+            
+            </div>
+        </div>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <ul class="footer-menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="qui-sommes-nous.html">Qui sommes-nous?</a></li>
+            <li><a href="pourquoi-ce-site.html">Pourquoi ce site?</a></li>
+            <li><a href="paiement-et-livraison.html">Paiement, livraison et droits de rétractation</a></li>
+            <li><a href="faq.html">Questions fréquentes</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

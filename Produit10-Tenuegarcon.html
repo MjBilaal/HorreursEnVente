@@ -57,51 +57,53 @@
     </header>
 
     <!-- Contenu principal de la page -->
+
     <main>
-        <div class="main-content">
-            <!-- Section de mise en avant de produit -->
-            <section class="featured">
-                <h2>Produit à la une</h2>
-                <p>Stock limité!</p>
-            </section>
-            <!-- Section pour découvrir les produits -->
-            <section class="discover">
-                <button onclick="window.location.href='tous-les-produits.html';">Découvrez nos produits</button>
-            </section>
-        </div>
-        <!-- Section des avis sur les produits -->
-        <div class="product-reviews">
-            <!-- Avis sur le produit 1 -->
-            <div class="product-review">
-                <a href="page-produit1.html"> <!-- Ajout du lien vers la page du produit -->
-                    <img src="Images/image99.jpg" alt="Produit 1">
-                    <p>4 masques horreurs</p>
-                </a>
-                <div class="review-card">
-                    <div class="reviewer-name">John Doe</div>
-                    <div class="review-rating">★★★★★</div>
-                    <div class="review-text">Incroyablement terrifiant et de grande qualité !</div>
-                </div>
+        <div class="product-container">
+            <!-- Section de gauche avec image du produit -->
+            <div class="product-image">
+                <img src="Images/clowngarcon.jpg" alt="costume de clown pour garçon">
             </div>
-            <!-- Avis sur le produit 2 -->
-            <div class="product-review">
-                <img src="Images/image98.jpg" alt="Produit 2">
-                <p>Costume de clown effrayant</p>
-                <div class="review-card">
-                    <div class="reviewer-name">Jane Smith</div>
-                    <div class="review-rating">★★★★☆</div>
-                    <div class="review-text">Très bon produit, taille parfaite!</div>
+
+            <!-- Section de droite avec détails du produit -->
+            <div class="product-details">
+                <h1>Costume de clown pour garçon</h1>
+                <p class="product-description">Plongez dans l'obscurité de l'horreur avec notre costume de clown effrayant pour garçon, idéal pour Halloween ou toute occasion sinistre. La combinaison à rayures noires et rouges crée une ambiance mystérieuse, tandis que le masque de clown horripilant, doté d'un sourire démesuré et d'yeux perçants, instille la terreur.
+
+                    Le costume est agrémenté de détails effrayants, tels que des touches de faux sang, ajoutant une dimension macabre au look. Les accessoires, comme les gants noirs effilés et le chapeau de clown déchiré, complètent cette tenue cauchemardesque.
+                    
+                    Offrez à votre enfant une expérience mémorable et effrayante avec ce costume de clown qui fera sensation lors des festivités d'Halloween.</p>
+                <p class="product-price">Prix: 35.99 €</p>
+                
+                <!-- Section pour sélectionner la quantité -->
+                <div class="quantity-selector">
+                    <label for="quantity">Quantité :</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
                 </div>
-            </div>
-            <!-- Avis sur le produit 3 -->
-            <div class="product-review">
-                <img src="Images/image97.jpg" alt="Produit 3">
-                <p>Coffret DVD Shining / ÇA</p>
-                <div class="review-card">
-                    <div class="reviewer-name">Alice Martin</div>
-                    <div class="review-rating">★★★☆☆</div>
-                    <div class="review-text">Bien reçu le colis, des chef d'oeuvres ces 2 films.</div>
+
+                <!-- Bouton Ajouter au panier -->
+                <button type="button" class="add-to-cart-btn">Ajouter au panier</button>
+                <!-- Section des évaluations -->
+                <div class="ratings">
+                    <span class="stars">★★★★☆</span>
+                    <span class="reviews">(206 avis)</span>
                 </div>
+                <div class="customer-reviews">
+                    <h2>Ce qu'en ont pensé les clients:</h2>
+                    <div class="review">
+                        <span class="stars">★★★★☆</span>
+                        <p><strong>Avis de Tom:</strong><p>Le costume a vraiment effrayé tous les enfants du quartier! Les détails du masque sont saisissants, et la combinaison ajoute une touche sinistre. Mon fils l'adore!</p>
+                    </div>
+                    <div class="review">
+                        <span class="stars">★★★☆☆</span>
+                        <p><strong>Avis de LauraFright21:</strong><p>Le costume est de grande qualité, mais le masque peut être un peu effrayant pour les plus jeunes. Mon petit fils a adoré, mais certains amis ont été un peu intimidés.</p>
+                    </div>
+                    <div class="review">
+                        <span class="stars">★★★★☆</span>
+                        <p><strong>Avis de EffroiEnfants:</strong><p>Parfait pour une soirée d'Halloween effrayante! Le masque est vraiment effrayant, et la qualité globale est excellente. Mon fils a volé la vedette avec ce costume terrifiant!</p>
+                    </div>
+                </div>
+            
             </div>
         </div>
     </main>

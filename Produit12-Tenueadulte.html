@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Metadata et liens vers les feuilles de style -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horreur en vente</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- En-tête de la page -->
+    <header>
+        <div class="header">
+            <!-- Logo avec lien de redirection vers l'index -->
+            <a href="index.html"><img src="Images/logo.png" alt="Logo Horreur en Vente" id="logo"></a>
+            <!-- Barre de navigation -->
+            <nav class="navbar">
+                <ul class="menu">
+                    <!-- Lien vers la page de tous les produits -->
+                    <li><a href="produit.html">Tous les produits</a></li>
+                    <!-- Dropdown pour les masques avec liens de redirection -->
+                    <li class="dropdown">
+                        <a href="masques.html" class="dropbtn">Masques</a>
+                        <div class="dropdown-content">
+                            <a href="#">Halloween</a>
+                            <a href="#">Personnages de film</a>
+                            <a href="#">Masques animaux</a>
+                        </div>
+                    </li>
+                    <!-- Dropdown pour les costumes avec liens de redirection -->
+                    <li class="dropdown">
+                        <a href="costumes.html" class="dropbtn">Costumes</a>
+                        <div class="dropdown-content">
+                            <a href="#">Filles</a>
+                            <a href="#">Garçons</a>
+                            <a href="#">Adultes</a>
+                        </div>
+                    </li>
+                    <!-- Dropdown pour les licences phares avec liens de redirection -->
+                    <li class="dropdown">
+                        <a href="licences-phares.html" class="dropbtn">Licences phares</a>
+                        <div class="dropdown-content">
+                            <a href="#">Films d'horreur</a>
+                            <a href="#">Séries TV</a>
+                            <a href="#">Jeux vidéo</a>
+                        </div>
+                    </li>
+                </ul>
+                <!-- Menu du compte et panier -->
+                <ul class="menu account-menu">
+                    <li><a href="panier.html">Panier</a></li>
+                    <li><a href="compte-client.html">Mon compte client</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenu principal de la page -->
+
+    <main>
+        <div class="product-container">
+            <!-- Section de gauche avec image du produit -->
+            <div class="product-image">
+                <img src="Images/medecin.png" alt="costume de medecin pour adulte">
+            </div>
+
+            <!-- Section de droite avec détails du produit -->
+            <div class="product-details">
+                <h1>Costume de medecin pour adulte</h1>
+                <p class="product-description">Plongez dans l'obscurité de l'histoire avec notre costume de médecin de la peste pour adulte, une tenue saisissante qui évoque l'époque médiévale marquée par la peste noire. Ce costume détaillé et réaliste est idéal pour les soirées costumées, les événements historiques ou les fêtes d'Halloween.
+
+                    Le costume comprend une tunique longue et ample en toile noire, rehaussée d'une cape à capuchon assortie. La capuche est munie d'un masque intégré, inspiré des masques becs de l'époque, symbolisant la lutte contre les maladies contagieuses. Les manches amples et les détails en dentelle apportent une touche d'authenticité à l'ensemble.
+                    
+                    Accessoirisez votre tenue avec un bâton de médecin de la peste et des gants assortis pour un effet complet. Ce costume unique est une façon captivante de revisiter le passé sombre tout en étant une conversation intrigante à chaque fête.</p>
+                <p class="product-price">Prix: 79.99 €</p>
+                
+                <!-- Section pour sélectionner la quantité -->
+                <div class="quantity-selector">
+                    <label for="quantity">Quantité :</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
+                </div>
+
+                <!-- Bouton Ajouter au panier -->
+                <button type="button" class="add-to-cart-btn">Ajouter au panier</button>
+                <!-- Section des évaluations -->
+                <div class="ratings">
+                    <span class="stars">★★★☆☆</span>
+                    <span class="reviews">(222 avis)</span>
+                </div>
+                <div class="customer-reviews">
+                    <h2>Ce qu'en ont pensé les clients:</h2>
+                    <div class="review">
+                        <span class="stars">★★★★☆</span>
+                        <p><strong>Avis de Lucie:</strong><p>J'ai adoré l'aspect historique de ce costume. Les détails sont incroyables, surtout le masque. C'était le clou de ma soirée costumée!</p>
+                    </div>
+                    <div class="review">
+                        <span class="stars">★★★☆☆</span>
+                        <p><strong>Avis de Alex:</strong><p>Le costume est bien fait, mais le masque peut être un peu inconfortable après un moment. Cependant, l'ensemble a vraiment impressionné tout le monde à la fête.</p>
+                    </div>
+                    <div class="review">
+                        <span class="stars">★★★★☆</span>
+                        <p><strong>Avis de Sophie:</strong><p>Une tenue très élégante pour une soirée médiévale. La qualité est au rendez-vous, et la cape donne une dimension mystique. Je recommande!</p>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <ul class="footer-menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="qui-sommes-nous.html">Qui sommes-nous?</a></li>
+            <li><a href="pourquoi-ce-site.html">Pourquoi ce site?</a></li>
+            <li><a href="paiement-et-livraison.html">Paiement, livraison et droits de rétractation</a></li>
+            <li><a href="faq.html">Questions fréquentes</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

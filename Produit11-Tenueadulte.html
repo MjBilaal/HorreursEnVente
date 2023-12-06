@@ -57,51 +57,53 @@
     </header>
 
     <!-- Contenu principal de la page -->
+
     <main>
-        <div class="main-content">
-            <!-- Section de mise en avant de produit -->
-            <section class="featured">
-                <h2>Produit à la une</h2>
-                <p>Stock limité!</p>
-            </section>
-            <!-- Section pour découvrir les produits -->
-            <section class="discover">
-                <button onclick="window.location.href='tous-les-produits.html';">Découvrez nos produits</button>
-            </section>
-        </div>
-        <!-- Section des avis sur les produits -->
-        <div class="product-reviews">
-            <!-- Avis sur le produit 1 -->
-            <div class="product-review">
-                <a href="page-produit1.html"> <!-- Ajout du lien vers la page du produit -->
-                    <img src="Images/image99.jpg" alt="Produit 1">
-                    <p>4 masques horreurs</p>
-                </a>
-                <div class="review-card">
-                    <div class="reviewer-name">John Doe</div>
-                    <div class="review-rating">★★★★★</div>
-                    <div class="review-text">Incroyablement terrifiant et de grande qualité !</div>
-                </div>
+        <div class="product-container">
+            <!-- Section de gauche avec image du produit -->
+            <div class="product-image">
+                <img src="Images/couplevampire.png" alt="costume de vampire pour adulte">
             </div>
-            <!-- Avis sur le produit 2 -->
-            <div class="product-review">
-                <img src="Images/image98.jpg" alt="Produit 2">
-                <p>Costume de clown effrayant</p>
-                <div class="review-card">
-                    <div class="reviewer-name">Jane Smith</div>
-                    <div class="review-rating">★★★★☆</div>
-                    <div class="review-text">Très bon produit, taille parfaite!</div>
+
+            <!-- Section de droite avec détails du produit -->
+            <div class="product-details">
+                <h1>Costume de vampire pour adulte</h1>
+                <p class="product-description">Transformez-vous en une créature de la nuit avec notre costume de vampire pour adulte, une tenue raffinée et élégante qui capture l'essence du vampirisme. Cette création exquise est parfaite pour les soirées costumées, les fêtes d'Halloween ou les événements thématiques.
+
+                    La cape longue et fluide, d'un rouge profond, ajoute une touche de mystère et de sophistication à l'ensemble. Le gilet noir orné de détails subtils, comme des broderies gothiques, crée une allure aristocratique, tandis que le jabot blanc ajoute une note de vintage à l'ensemble.
+                    
+                    Le costume comprend également une paire de canines réalistes pour parfaire votre transformation en vampire. Associez ce costume à un maquillage de vampire saisissant et à une coiffure sombre pour un effet final époustouflant.</p>
+                <p class="product-price">Prix: 89.99 €</p>
+                
+                <!-- Section pour sélectionner la quantité -->
+                <div class="quantity-selector">
+                    <label for="quantity">Quantité :</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
                 </div>
-            </div>
-            <!-- Avis sur le produit 3 -->
-            <div class="product-review">
-                <img src="Images/image97.jpg" alt="Produit 3">
-                <p>Coffret DVD Shining / ÇA</p>
-                <div class="review-card">
-                    <div class="reviewer-name">Alice Martin</div>
-                    <div class="review-rating">★★★☆☆</div>
-                    <div class="review-text">Bien reçu le colis, des chef d'oeuvres ces 2 films.</div>
+
+                <!-- Bouton Ajouter au panier -->
+                <button type="button" class="add-to-cart-btn">Ajouter au panier</button>
+                <!-- Section des évaluations -->
+                <div class="ratings">
+                    <span class="stars">★★★★☆</span>
+                    <span class="reviews">(178 avis)</span>
                 </div>
+                <div class="customer-reviews">
+                    <h2>Ce qu'en ont pensé les clients:</h2>
+                    <div class="review">
+                        <span class="stars">★★★★☆</span>
+                        <p><strong>Avis de Alex:</strong><p>Ce costume a vraiment dépassé mes attentes! La qualité est exceptionnelle, et la cape donne une sensation de grandeur. Je me sentais comme Dracula lui-même!</p>
+                    </div>
+                    <div class="review">
+                        <span class="stars">★★★★☆</span>
+                        <p><strong>Avis de  Sarah:</strong><p>Un choix parfait pour une soirée à thème vampire. La cape est magnifique, et l'ensemble est confortable à porter. Mes amis ont adoré l'effet vampirique</p>
+                    </div>
+                    <div class="review">
+                        <span class="stars">★★★★★</span>
+                        <p><strong>Avis de MaxStyle:</strong><p>J'ai reçu de nombreux compliments lors de la soirée costumée. Le gilet ajoute une touche de sophistication, et la cape flottante crée une ambiance mystique. Un excellent choix pour les amateurs de vampires!</p>
+                    </div>
+                </div>
+            
             </div>
         </div>
     </main>

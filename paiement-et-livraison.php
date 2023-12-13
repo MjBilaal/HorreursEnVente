@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+<html lang="fr">
 <head>
     <!-- Metadata et liens vers les feuilles de style -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Horreur en vente</title>
+    <title>Horreur en Vente - Paiement, Livraison et Droits de Rétractation</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,6 +17,8 @@
             <!-- Barre de navigation -->
             <nav class="navbar">
                 <ul class="menu">
+                    <!-- Lien vers la page de tous les produits -->
+                    <li><a href="produit.html">Tous les produits</a></li>
                     <!-- Dropdown pour les masques avec liens de redirection -->
                     <li class="dropdown">
                         <a href="masques.html" class="dropbtn">Masques</a>
@@ -45,66 +48,36 @@
                     </li>
                 </ul>
                 <!-- Menu du compte et panier -->
-              
-              <ul class="menu account-menu">
-                    <li><a href="panier.html">Panier <span id="cart-count">0</span></a></li>
+                <ul class="menu account-menu">
+                    <li><a href="panier.html">Panier</a></li>
                     <li><a href="compte-client.html">Mon compte client</a></li>
                 </ul>
-
             </nav>
         </div>
     </header>
 
     <!-- Contenu principal de la page -->
     <main>
-        <div class="main-content">
-            <!-- Section de mise en avant de produit -->
-            <section class="featured">
-                <h2>Produit à la une</h2>
-                <p>Stock limité!</p>
-            </section>
-            <!-- Section pour découvrir les produits -->
-            <section class="discover">
-                <button onclick="window.location.href='masques.html';">Découvrez nos produits</button>
-            </section>
-        </div>
-        <!-- Section des avis sur les produits -->
-        <div class="product-reviews">
-            <!-- Avis sur le produit 1 -->
-            <div class="product-review">
-                <a href="Produit1-LotMasques.html"> <!-- Ajout du lien vers la page du produit -->
-                    <img src="Images/image99.jpg" alt="Produit 1" style="width: 450px; height: auto;">
-                    <p>4 masques horreurs</p>
-                </a>
-                <div class="review-card">
-                    <div class="reviewer-name">John Doe</div>
-                    <div class="review-rating">★★★★★</div>
-                    <div class="review-text">Incroyablement terrifiant et de grande qualité !</div>
-                </div>
-            </div>
-            <!-- Avis sur le produit 2 -->
-            <div class="product-review">
-                <a href="Produit2-demon.html"> <!-- Ajout du lien vers la page du produit -->
-                <img src="Images/image98.jpg" alt="Produit 2" style="width: 450px; height: auto;">
-                <p>Costume de clown effrayant</p>
-                <div class="review-card">
-                    <div class="reviewer-name">Jane Smith</div>
-                    <div class="review-rating">★★★★☆</div>
-                    <div class="review-text">Très bon produit, taille parfaite!</div>
-                </div>
-            </div>
-            <!-- Avis sur le produit 3 -->
-            <div class="product-review">
-                <a href="Produit9-Tenuegarcon.html"> <!-- Ajout du lien vers la page du produit -->
-                <img src="Images/image97.jpg" alt="Produit 3" style="width: 450px; height: auto;">
-                <p>Coffret DVD Shining / ÇA</p>
-                <div class="review-card">
-                    <div class="reviewer-name">Alice Martin</div>
-                    <div class="review-rating">★★★☆☆</div>
-                    <div class="review-text">Bien reçu le colis, des chef d'oeuvres ces 2 films.</div>
-                </div>
-            </div>
-        </div>
+        <section class="payment-delivery-returns">
+            <h2>Paiement, Livraison et Droits de Rétractation</h2>
+            <br>
+            <h3>1. Paiement Sécurisé:</h3>
+            <p>Nous comprenons à quel point la sécurité de vos informations est importante. Horreur en Vente utilise des protocoles de paiement sécurisés pour garantir la confidentialité de vos transactions. Nous acceptons les principales cartes de crédit, ainsi que des options de paiement en ligne sécurisées telles que PayPal.</p>
+            <br><br><br><br>
+            <h3>2. Livraison Rapide et Fiable:</h3>
+            <p>Votre impatience est la nôtre! Nous proposons des options de livraison rapides pour que vous puissiez recevoir vos articles d'horreur préférés dans les plus brefs délais. Les délais de livraison standard sont estimés à 3-5 jours ouvrables. Pour les commandes de plus de 50 euros, la livraison est gratuite!</p>
+            <br><br><br><br>
+            <h3>3. Politique de Retour et de Rétractation:</h3>
+            <p>Vous n'êtes pas totalement satisfait de votre achat? Pas de problème! Horreur en Vente offre une politique de retour de 30 jours. Si un article ne correspond pas à vos attentes, vous pouvez le retourner dans les 30 jours suivant la réception pour un remboursement complet ou un échange. Consultez notre page de politique de retour pour les détails complets et les instructions.</p>
+            <br><br><br><br>
+            <h3>4. Service Client Dédié:</h3>
+            <p>Notre équipe de service client est là pour vous aider à chaque étape du processus. Besoin d'aide pour passer votre commande, suivre votre livraison ou traiter un retour? N'hésitez pas à nous contacter via notre page de contact ou par e-mail à support@horreurenvente.com. Nous nous engageons à résoudre vos problèmes rapidement et efficacement.</p>
+            <br><br><br><br>
+            <h3>5. Suivi des Commandes:</h3>
+            <p>Pour votre tranquillité d'esprit, vous pouvez suivre votre commande en temps réel. Une fois votre commande expédiée, vous recevrez un numéro de suivi par e-mail. Utilisez ce numéro pour suivre l'acheminement de votre colis jusqu'à votre porte.</p>
+            <br><br><br><br>
+            <p>Merci de choisir Horreur en Vente pour tous vos besoins en articles d'horreur. Nous sommes ravis de vous offrir une expérience de magasinage sécurisée, rapide et agréable!</p>
+        </section>
     </main>
 
     <!-- Pied de page -->
